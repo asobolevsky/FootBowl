@@ -1,0 +1,15 @@
+{
+  "originHash" : "05e81e1045e7cec21b352eaa181eb8deca1c6bed76761728c189cabc4d559acd",
+  "pins" : [
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/asobolevsky/Networking",
+      "state" : {
+        "revision" : "4be1d1fd25bfd851d6517184fed60575d85c1b5f",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

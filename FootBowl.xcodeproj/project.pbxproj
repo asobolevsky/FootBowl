@@ -3,15 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5F503D2C1F2AC20019ECBC /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 5F5F503C2C1F2AC20019ECBC /* Networking */; };
 		5FD2DC832C1A9345000C8ED8 /* FootBowlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2DC822C1A9345000C8ED8 /* FootBowlApp.swift */; };
 		5FD2DC852C1A9345000C8ED8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2DC842C1A9345000C8ED8 /* ContentView.swift */; };
 		5FD2DC872C1A9346000C8ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD2DC862C1A9346000C8ED8 /* Assets.xcassets */; };
 		5FD2DC8A2C1A9346000C8ED8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD2DC892C1A9346000C8ED8 /* Preview Assets.xcassets */; };
+		5FD2DC972C1A969C000C8ED8 /* FootBowlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2DC962C1A969C000C8ED8 /* FootBowlTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FD2DC982C1A969C000C8ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FD2DC772C1A9345000C8ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FD2DC7E2C1A9345000C8ED8;
+			remoteInfo = FootBowl;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5FD2DC7F2C1A9345000C8ED8 /* FootBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +31,52 @@
 		5FD2DC842C1A9345000C8ED8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FD2DC862C1A9346000C8ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD2DC892C1A9346000C8ED8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FD2DC942C1A969C000C8ED8 /* FootBowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootBowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD2DC962C1A969C000C8ED8 /* FootBowlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootBowlTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5F38BF452C1BDB2800E8B4FE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FootballAPI/FootballAPITests.swift,
+			);
+			target = 5FD2DC932C1A969C000C8ED8 /* FootBowlTests */;
+		};
+		5F38BF4A2C1BDD0500E8B4FE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Dictionary+Utils.swift",
+			);
+			target = 5FD2DC7E2C1A9345000C8ED8 /* FootBowl */;
+		};
+		5FD3AB4D2C1B9A3800CA20EB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FootballAPI/FootballAPI.swift,
+				Shared/Network/Endpoint.swift,
+				Shared/Network/NetworkAgent.swift,
+			);
+			target = 5FD2DC7E2C1A9345000C8ED8 /* FootBowl */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5F38BF412C1BDB1400E8B4FE /* Domains */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (5F38BF452C1BDB2800E8B4FE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Domains; sourceTree = "<group>"; };
+		5F38BF462C1BDCEE00E8B4FE /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (5F38BF4A2C1BDD0500E8B4FE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
+		5FD3AB472C1B9A0C00CA20EB /* Domains */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (5FD3AB4D2C1B9A3800CA20EB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Domains; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5FD2DC7C2C1A9345000C8ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5F503D2C1F2AC20019ECBC /* Networking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD2DC912C1A969C000C8ED8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5FD2DC812C1A9345000C8ED8 /* FootBowl */,
+				5FD2DC952C1A969C000C8ED8 /* FootBowlTests */,
 				5FD2DC802C1A9345000C8ED8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				5FD2DC7F2C1A9345000C8ED8 /* FootBowl.app */,
+				5FD2DC942C1A969C000C8ED8 /* FootBowlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +107,8 @@
 		5FD2DC812C1A9345000C8ED8 /* FootBowl */ = {
 			isa = PBXGroup;
 			children = (
+				5F38BF462C1BDCEE00E8B4FE /* Extensions */,
+				5FD3AB472C1B9A0C00CA20EB /* Domains */,
 				5FD2DC822C1A9345000C8ED8 /* FootBowlApp.swift */,
 				5FD2DC842C1A9345000C8ED8 /* ContentView.swift */,
 				5FD2DC862C1A9346000C8ED8 /* Assets.xcassets */,
@@ -65,6 +123,15 @@
 				5FD2DC892C1A9346000C8ED8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5FD2DC952C1A969C000C8ED8 /* FootBowlTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F38BF412C1BDB1400E8B4FE /* Domains */,
+				5FD2DC962C1A969C000C8ED8 /* FootBowlTests.swift */,
+			);
+			path = FootBowlTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +150,30 @@
 			dependencies = (
 			);
 			name = FootBowl;
+			packageProductDependencies = (
+				5F5F503C2C1F2AC20019ECBC /* Networking */,
+			);
 			productName = FootBowl;
 			productReference = 5FD2DC7F2C1A9345000C8ED8 /* FootBowl.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5FD2DC932C1A969C000C8ED8 /* FootBowlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD2DC9A2C1A969C000C8ED8 /* Build configuration list for PBXNativeTarget "FootBowlTests" */;
+			buildPhases = (
+				5FD2DC902C1A969C000C8ED8 /* Sources */,
+				5FD2DC912C1A969C000C8ED8 /* Frameworks */,
+				5FD2DC922C1A969C000C8ED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FD2DC992C1A969C000C8ED8 /* PBXTargetDependency */,
+			);
+			name = FootBowlTests;
+			productName = FootBowlTests;
+			productReference = 5FD2DC942C1A969C000C8ED8 /* FootBowlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +188,10 @@
 					5FD2DC7E2C1A9345000C8ED8 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					5FD2DC932C1A969C000C8ED8 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5FD2DC7E2C1A9345000C8ED8;
+					};
 				};
 			};
 			buildConfigurationList = 5FD2DC7A2C1A9345000C8ED8 /* Build configuration list for PBXProject "FootBowl" */;
@@ -111,11 +203,15 @@
 				Base,
 			);
 			mainGroup = 5FD2DC762C1A9345000C8ED8;
+			packageReferences = (
+				5F5F503B2C1F2AC20019ECBC /* XCRemoteSwiftPackageReference "Networking" */,
+			);
 			productRefGroup = 5FD2DC802C1A9345000C8ED8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5FD2DC7E2C1A9345000C8ED8 /* FootBowl */,
+				5FD2DC932C1A969C000C8ED8 /* FootBowlTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +223,13 @@
 			files = (
 				5FD2DC8A2C1A9346000C8ED8 /* Preview Assets.xcassets in Resources */,
 				5FD2DC872C1A9346000C8ED8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FD2DC922C1A969C000C8ED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +245,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FD2DC902C1A969C000C8ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FD2DC972C1A969C000C8ED8 /* FootBowlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FD2DC992C1A969C000C8ED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FD2DC7E2C1A9345000C8ED8 /* FootBowl */;
+			targetProxy = 5FD2DC982C1A969C000C8ED8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5FD2DC8B2C1A9346000C8ED8 /* Debug */ = {
@@ -322,6 +441,42 @@
 			};
 			name = Release;
 		};
+		5FD2DC9B2C1A969C000C8ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GH6D8FG4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.poissondemars.FootBowlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootBowl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FootBowl";
+			};
+			name = Debug;
+		};
+		5FD2DC9C2C1A969C000C8ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GH6D8FG4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.poissondemars.FootBowlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootBowl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FootBowl";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,7 +498,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5FD2DC9A2C1A969C000C8ED8 /* Build configuration list for PBXNativeTarget "FootBowlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD2DC9B2C1A969C000C8ED8 /* Debug */,
+				5FD2DC9C2C1A969C000C8ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F5F503B2C1F2AC20019ECBC /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/asobolevsky/Networking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F5F503C2C1F2AC20019ECBC /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F5F503B2C1F2AC20019ECBC /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FD2DC772C1A9345000C8ED8 /* Project object */;
 }
